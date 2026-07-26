@@ -65,11 +65,11 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#resume">Resume</a></li>
+          <li><a href="index.html#portfolio" class="active">Portfolio</a></li>
+          <li><a href="index.html#services">Services</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -88,7 +88,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -116,17 +116,16 @@
       <div class="breadcrumbs">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i> Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Category</a></li>
-            <li class="breadcrumb-item active current">Portfolio Details</li>
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Home</a></li>
+            <li class="breadcrumb-item"><a href="index.html#portfolio" id="breadcrumb-category">Portfolio</a></li>
+            <li class="breadcrumb-item active current" id="breadcrumb-item-title">Portfolio Details</li>
           </ol>
         </nav>
       </div>
 
       <div class="title-wrapper">
         <h1>Portfolio Details</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
-          pulvinar dapibus leo.</p>
+        <p>Detail lengkap dan dokumentasi hasil karya proyek.</p>
       </div>
     </div><!-- End Page Title -->
 
@@ -136,69 +135,28 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4 g-lg-5">
-          <div class="col-lg-6">
-            <img src="assets/img/portfolio/web design.png" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/mobile developper.jpg" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/web developper.png" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/organisasi.jpg" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/mobile developpere.jpg" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/organisasi ec.JPG" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/organisasi ec 2.JPG" class="img-fluid mb-4" alt="">
+          <div class="col-lg-6" id="portfolio-images-container">
+            <img src="assets/img/portfolio/web design.png" class="img-fluid mb-4 rounded shadow-sm" alt="Portfolio Image">
           </div>
 
           <div class="col-lg-6">
 
             <div class="position-sticky" style="top: 40px">
               <div class="portfolio-description">
-                <h2>This is an example of portfolio details</h2>
-                <p>
-                  Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
-                  Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia
-                  accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt
-                  eius.
-                </p>
-                <p>
-                  Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam
-                  et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque
-                  nesciunt molestiae laboriosam.
-                </p>
-
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
-                      malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <div>
-                    <img src="assets/img/person/person-f-5.webp" class="testimonial-img" alt="">
-                    <h3>Sara Wilsson</h3>
-                    <h4>Designer</h4>
-                  </div>
+                <h2 id="detail-title">Judul Portfolio</h2>
+                <div id="detail-description">
+                  <p>Penjelasan detail proyek portfolio akan tampil di sini.</p>
                 </div>
-
-                <p>
-                  Impedit ipsum quae et aliquid doloribus et voluptatem quasi. Perspiciatis occaecati earum et magnam
-                  animi. Quibusdam non qui ea vitae suscipit vitae sunt. Repudiandae incidunt cumque minus deserunt
-                  assumenda tempore. Delectus voluptas necessitatibus est.
-                </p>
-
-                <p>
-                  Sunt voluptatum sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero.
-                  Explicabo et quod necessitatibus similique quis dolor eum. Numquam eaque praesentium rem et qui
-                  nesciunt.
-                </p>
-
               </div>
 
               <div class="portfolio-info mt-5">
-                <h3>Project information</h3>
+                <h3>Informasi Proyek</h3>
                 <ul>
-                  <li><strong>Category</strong> Web design</li>
-                  <li><strong>Client</strong> ASU Company</li>
-                  <li><strong>Project date</strong> 01 March, 2020</li>
-                  <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
-                  <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
+                  <li><strong>Kategori:</strong> <span id="info-category">Web Design</span></li>
+                  <li><strong>Klien / Konteks:</strong> <span id="info-client">Proyek Kampus</span></li>
+                  <li><strong>Tahun:</strong> <span id="info-date">2026</span></li>
+                  <li><strong>Tautan Proyek:</strong> <a href="index.html#portfolio" id="info-url">Kembali ke Portfolio</a></li>
+                  <li><a href="index.html#portfolio" class="btn-visit align-self-start" id="btn-visit">Lihat Portfolio Lainnya</a></li>
                 </ul>
               </div>
             </div>
@@ -226,10 +184,6 @@
         <a href=""><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a
           href="https://bootstrapmade.com/tools/">DevTools</a>
       </div>
@@ -253,6 +207,203 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Script Penjelasan Dinamis Portofolio -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const portfolioData = {
+        'smartit-web': {
+          title: 'SmartIT - E-Commerce UI/UX Design',
+          subtitle: 'Perancangan Antarmuka Toko Elektronik Modern',
+          category: 'Web Design',
+          client: 'Proyek Portfolio / UI Design',
+          date: '2026',
+          url: 'index.html#portfolio',
+          urlText: 'Kembali ke Portfolio',
+          images: [
+            { src: 'assets/img/portfolio/web design.png', alt: 'SmartIT UI Design' }
+          ],
+          description: `
+            <p><strong>SmartIT</strong> adalah konsep rancangan antarmuka (UI/UX) untuk platform toko online perangkat elektronik dan teknologi modern. Desain ini dikembangkan dengan pendekatan estetika <em>Dark Mode</em> yang futuristik namun tetap ramah mata serta memiliki struktur navigasi yang intuitif.</p>
+            <p>Proyek ini mencakup tata letak header dengan bilah pencarian interaktif, sistem filter kategori produk (Laptop, Komputer, Mobile, Audio, Kamera, Aksesori), promotional hero banner yang menonjolkan penawaran diskon produk unggulan seperti iPhone 17, serta susunan katalog produk dalam format grid yang responsif.</p>
+            <p>Fokus utama perancangan ini adalah memberikan kemudahan navigasi bagi calon pembeli dalam memilah produk, melihat harga secara transparan, dan mempercepat alur pembelian dari pemilihan barang hingga proses checkout.</p>
+          `,
+          highlightsTitle: 'Keunggulan Desain:',
+          highlights: [
+            'Antarmuka Dark Mode yang sleek, modern, dan profesional.',
+            'Struktur hirarki informasi yang rapi untuk meningkatkan kenyamanan pengguna.',
+            'Kartu katalog produk responsif yang siap diadaptasi ke berbagai ukuran layar.'
+          ]
+        },
+        'laundrymu-mobile': {
+          title: 'LaundryMu - Mobile Application',
+          subtitle: 'Aplikasi Layanan Cuci Baju Terintegrasi Berbasis Mobile',
+          category: 'Mobile Developer',
+          client: 'Proyek Aplikasi Kampus',
+          date: '2026',
+          url: 'index.html#portfolio',
+          urlText: 'Kembali ke Portfolio',
+          images: [
+            { src: 'assets/img/portfolio/mobile developper.jpg', alt: 'LaundryMu Mobile Interface 1' },
+            { src: 'assets/img/portfolio/mobile developpere.jpg', alt: 'LaundryMu Mobile Interface 2' }
+          ],
+          description: `
+            <p><strong>LaundryMu Mobile App</strong> dirancang untuk menyelesaikan permasalahan efisiensi dalam layanan laundry harian. Aplikasi ini memberikan kenyamanan bagi pengguna untuk memesan jasa pencucian pakaian langsung dari smartphone mereka tanpa perlu datang ke lokasi fisik outlet.</p>
+            <p>Fitur-fitur utama yang ditawarkan meliputi sistem pemilihan jenis paket cuci (cuci lipat, cuci setrika, express), penentuan alur antar-jemput pakaian otomatis, kalkulator estimasi biaya berbasis berat atau jumlah barang, hingga fitur notifikasi status pengerjaan yang transparan dari tahap penerimaan, pencucian, pengeringan, hingga siap diantar.</p>
+            <p>Pengembangan antarmuka berfokus pada kesederhanaan penggunaan (usability) sehingga pengguna dari berbagai kalangan dapat menyelesaikan transaksi hanya dalam beberapa langkah mudah.</p>
+          `,
+          highlightsTitle: 'Fitur Utama Mobile App:',
+          highlights: [
+            'Pemesanan antar-jemput cuci pakaian berbasis lokasi.',
+            'Status pengerjaan real-time (Penerimaan -> Pencucian -> Pengeringan -> Selesai).',
+            'Sistem kalkulasi harga otomatis dan riwayat pesanan.'
+          ]
+        },
+        'laundrymu-web': {
+          title: 'LaundryMu - Web Management System',
+          subtitle: 'Dashboard Admin & Sistem Manajemen Outlet Laundry',
+          category: 'Web Developer',
+          client: 'Proyek Aplikasi Kampus',
+          date: '2026',
+          url: 'index.html#portfolio',
+          urlText: 'Kembali ke Portfolio',
+          images: [
+            { src: 'assets/img/portfolio/web developper.png', alt: 'LaundryMu Web Dashboard' }
+          ],
+          description: `
+            <p><strong>LaundryMu Web Management System</strong> merupakan platform berbasis web yang dirancang khusus untuk memenuhi kebutuhan manajerial pemilik outlet dan staf kasir laundry. Sistem ini mengintegrasikan seluruh operasional usaha dalam satu dashboard yang aman dan mudah dioperasikan.</p>
+            <p>Dengan sistem ini, kasir dapat melakukan pencatatan transaksi masuk dengan cepat, mencetak nota atau mengirimkan bukti pembayaran digital via WhatsApp/Email, serta mengelola antrean pengerjaan laundry. Pemilik usaha juga disajikan analitik data keuangan harian, mingguan, dan bulanan melalui grafik visualisasi yang interaktif.</p>
+            <p>Dibidang teknis, web ini dibangun dengan memperhatikan arsitektur data yang efisien, keamanan hak akses pengguna (Role-based Access Control), serta kecepatan pengolahan data transaksi skala menengah.</p>
+          `,
+          highlightsTitle: 'Modul & Fitur Web:',
+          highlights: [
+            'Dashboard analitik pendapatan dan grafik transaksi harian.',
+            'Manajemen status inventaris bahan cuci & data pelanggan.',
+            'Sistem Kasir (POS) cepat dengan pencetakan struk digital.'
+          ]
+        },
+        'kematif-org': {
+          title: 'Pengalaman Organisasi - KEMATIF Polije',
+          subtitle: 'Ketua BPH & Anggota Divisi Humas KEMATIF Polije',
+          category: 'Organisasi',
+          client: 'KEMATIF Politeknik Negeri Jember',
+          date: '2024 - Sekarang',
+          url: 'index.html#resume',
+          urlText: 'Lihat Resume Organisasi',
+          images: [
+            { src: 'assets/img/portfolio/kematif.JPG', alt: 'Kegiatan Organisasi KEMATIF' }
+          ],
+          description: `
+            <p>Perjalanan kepemimpinan dan manajerial dalam organisasi mahasiswa <strong>KEMATIF (Keluarga Mahasiswa Teknik Informatika) Politeknik Negeri Jember</strong>. Selama masa kepengurusan, dipercayakan amanah strategis sebagai <strong>Ketua Badan Pengawas Harian (BPH)</strong> untuk periode 2024-2025.</p>
+            <p>Dalam peran sebagai Ketua BPH, tanggung jawab utama meliputi pengawasan pelaksanaan program kerja seluruh divisi, penyusunan evaluasi kinerja pengurus, pertanggungjawaban anggaran, serta menjaga keharmonisan internal organisasi. Selanjutnya pada periode 2026-Sekarang, terus aktif berkontribusi di <strong>Divisi Humas</strong> untuk memimpin strategi komunikasi publik, menjalin kerjasama eksternal, dan mengelola media publikasi himpunan.</p>
+            <p>Pengalaman ini mengasah soft skill yang sangat berharga seperti kemampuan kepemimpinan (leadership), pemecahan masalah kritis, manajemen konflik, komunikasi publik, serta kerja sama tim dalam situasi bertekanan tinggi.</p>
+          `,
+          highlightsTitle: 'Pencapaian & Peran Utama:',
+          highlights: [
+            'Mengawal dan mengevaluasi seluruh program kerja himpunan selama periode 2024-2025.',
+            'Merancang strategi kehumasan dan penyampaian informasi kepada pihak internal & eksternal kampus.',
+            'Menginisiasi publikasi kreatif dan liputan dokumentasi kegiatan kemahasiswaan.'
+          ]
+        },
+        'photography-ec': {
+          title: 'Karya Fotografi & Dokumentasi UKM English Club',
+          subtitle: 'Dokumentasi Visual Liputan Acara Kampus & Event',
+          category: 'Fotografer',
+          client: 'UKM English Club Polije',
+          date: '2025 - Sekarang',
+          url: 'index.html#portfolio',
+          urlText: 'Kembali ke Portfolio',
+          images: [
+            { src: 'assets/img/portfolio/organisasi ec.JPG', alt: 'Dokumentasi UKM EC 1' },
+            { src: 'assets/img/portfolio/organisasi ec 2.JPG', alt: 'Dokumentasi UKM EC 2' }
+          ],
+          description: `
+            <p>Koleksi dokumentasi visual dan hasil karya fotografi pada berbagai kegiatan resmi <strong>UKM English Club Politeknik Negeri Jember</strong>. Fotografi merupakan salah satu keahlian utama di luar dunia pemrograman yang menjadi wadah dalam mengekspresikan kreativitas visual dan komunikasi publik.</p>
+            <p>Proyek dokumentasi ini mencakup pengambilan gambar pada event makrab, kompetisi bahasa Inggris, seminar nasional, serta pelantikan anggota baru. Proses pengerjaan meliputi perencanaan sudut pengambilan gambar (shot list), teknik pencahayaan di lapangan, hingga tahap <em>post-processing</em> (retouching dan koreksi warna) agar hasil foto memiliki standar kualitas tinggi.</p>
+            <p>Hasil karya ini tidak hanya digunakan sebagai arsip organisasi tetapi juga menjadi materi utama dalam kampanye media sosial untuk menarik minat calon anggota baru.</p>
+          `,
+          highlightsTitle: 'Keahlian Fotografi & Media:',
+          highlights: [
+            'Penguasaan teknik kamera DSLR/Mirrorless, komposisi visual, & lighting.',
+            'Penyuntingan dan koreksi warna foto untuk keperluan materi publikasi.',
+            'Manajemen liputan dokumentasi event berskala kampus.'
+          ]
+        }
+      };
+
+      // Get project ID from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      let projectId = urlParams.get('id');
+
+      if (!projectId || !portfolioData[projectId]) {
+        projectId = 'smartit-web'; // Default item
+      }
+
+      const data = portfolioData[projectId];
+
+      // Update Page Headings & Breadcrumb
+      document.title = `${data.title} - Detail Portfolio`;
+      
+      const pageTitleH1 = document.querySelector('.title-wrapper h1');
+      if (pageTitleH1) pageTitleH1.textContent = data.title;
+
+      const pageTitleP = document.querySelector('.title-wrapper p');
+      if (pageTitleP) pageTitleP.textContent = data.subtitle;
+
+      const breadcrumbCat = document.getElementById('breadcrumb-category');
+      if (breadcrumbCat) breadcrumbCat.textContent = data.category;
+
+      const breadcrumbTitle = document.getElementById('breadcrumb-item-title');
+      if (breadcrumbTitle) breadcrumbTitle.textContent = data.title;
+
+      // Update Images
+      const imgContainer = document.getElementById('portfolio-images-container');
+      if (imgContainer) {
+        imgContainer.innerHTML = data.images.map(img => 
+          `<img src="${img.src}" class="img-fluid mb-4 rounded shadow-sm" alt="${img.alt}">`
+        ).join('');
+      }
+
+      // Update Content
+      const titleElem = document.getElementById('detail-title');
+      if (titleElem) titleElem.textContent = data.title;
+
+      const descElem = document.getElementById('detail-description');
+      if (descElem) {
+        let contentHtml = data.description;
+        if (data.highlights && data.highlights.length > 0) {
+          contentHtml += `<div class="mt-4 mb-4"><h5 class="fw-bold">${data.highlightsTitle || 'Highlight Proyek:'}</h5><ul class="list-unstyled mt-2">`;
+          data.highlights.forEach(h => {
+            contentHtml += `<li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success me-2 mt-1"></i><span>${h}</span></li>`;
+          });
+          contentHtml += `</ul></div>`;
+        }
+        descElem.innerHTML = contentHtml;
+      }
+
+      // Update Project Info Sidebar
+      const catElem = document.getElementById('info-category');
+      if (catElem) catElem.textContent = data.category;
+
+      const clientElem = document.getElementById('info-client');
+      if (clientElem) clientElem.textContent = data.client;
+
+      const dateElem = document.getElementById('info-date');
+      if (dateElem) dateElem.textContent = data.date;
+
+      const urlElem = document.getElementById('info-url');
+      if (urlElem) {
+        urlElem.href = data.url;
+        urlElem.textContent = data.urlText || 'Kembali ke Portfolio';
+      }
+
+      const btnVisit = document.getElementById('btn-visit');
+      if (btnVisit) {
+        btnVisit.href = data.url;
+        btnVisit.textContent = data.urlText || 'Lihat Portfolio Lainnya';
+      }
+    });
+  </script>
 
 </body>
 
