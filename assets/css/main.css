@@ -1694,6 +1694,16 @@ section,
   font-size: 1.1rem;
 }
 
+.contact .contact-info .info-item a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact .contact-info .info-item a:hover {
+  color: var(--accent-color);
+}
+
 .contact .contact-info .info-item i {
   color: var(--accent-color);
   font-size: 1.4rem;
